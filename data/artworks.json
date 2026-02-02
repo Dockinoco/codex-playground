@@ -1,0 +1,66 @@
+[
+  {
+    "id": "a1",
+    "title": "Silent Shore",
+    "artist": "Hana Mori",
+    "year": "2019",
+    "image": "/artworks/silent-shore.svg",
+    "tags": ["sea", "minimal", "blue"]
+  },
+  {
+    "id": "a2",
+    "title": "Garden of Light",
+    "artist": "Hana Mori",
+    "year": "2021",
+    "image": "/artworks/garden-of-light.svg",
+    "tags": ["flora", "soft", "warm"]
+  },
+  {
+    "id": "a3",
+    "title": "Noon Geometry",
+    "artist": "Kei Sugimoto",
+    "year": "2017",
+    "image": "/artworks/noon-geometry.svg",
+    "tags": ["geometry", "sun", "yellow"]
+  },
+  {
+    "id": "a4",
+    "title": "Echoes in Clay",
+    "artist": "Kei Sugimoto",
+    "year": "2018",
+    "image": "/artworks/echoes-in-clay.svg",
+    "tags": ["earth", "texture", "brown"]
+  },
+  {
+    "id": "a5",
+    "title": "Night Weave",
+    "artist": "Mina Ito",
+    "year": "2020",
+    "image": "/artworks/night-weave.svg",
+    "tags": ["night", "indigo", "abstract"]
+  },
+  {
+    "id": "a6",
+    "title": "Soft Terrain",
+    "artist": "Mina Ito",
+    "year": "2016",
+    "image": "/artworks/soft-terrain.svg",
+    "tags": ["land", "pastel", "calm"]
+  },
+  {
+    "id": "a7",
+    "title": "Paper Horizon",
+    "artist": "Sora Ueda",
+    "year": "2015",
+    "image": "/artworks/paper-horizon.svg",
+    "tags": ["paper", "gray", "light"]
+  },
+  {
+    "id": "a8",
+    "title": "Crimson Pulse",
+    "artist": "Sora Ueda",
+    "year": "2022",
+    "image": "/artworks/crimson-pulse.svg",
+    "tags": ["red", "energy", "modern"]
+  }
+]
