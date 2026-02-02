@@ -1,0 +1,270 @@
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #666666;
+  --accent: #111111;
+  --chip-bg: #f3f3f3;
+  --chip-active: #111111;
+  --chip-active-text: #ffffff;
+  --card-bg: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+main {
+  padding: 64px clamp(24px, 6vw, 96px) 120px;
+}
+
+.header {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.header p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.controls {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.search-input {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  border: none;
+  background: var(--chip-bg);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.chip.active {
+  background: var(--chip-active);
+  color: var(--chip-active-text);
+}
+
+.masonry {
+  column-gap: 24px;
+  column-count: 1;
+}
+
+@media (min-width: 640px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 960px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+.card {
+  break-inside: avoid;
+  margin-bottom: 24px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 16px 18px 20px;
+  display: grid;
+  gap: 4px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.favorite {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--muted);
+  padding: 0;
+}
+
+.favorite.active {
+  color: #e63946;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.viewer {
+  position: relative;
+  max-width: min(92vw, 1400px);
+  max-height: 88vh;
+  display: grid;
+  place-items: center;
+  gap: 16px;
+}
+
+.viewer img {
+  max-width: 92vw;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.viewer-ui {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  color: #f1f1f1;
+  pointer-events: none;
+}
+
+.viewer-ui.visible {
+  pointer-events: auto;
+}
+
+.viewer-info {
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+  color: #f1f1f1;
+}
+
+.viewer-controls {
+  display: flex;
+  gap: 16px;
+}
+
+.viewer-button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.viewer-index {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.player-shell {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.player-toggle {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: #111111;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.player-frame {
+  width: 300px;
+  height: 80px;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.hidden {
+  display: none;
+}
+
+.empty-state {
+  padding: 48px 0;
+  color: var(--muted);
+  text-align: center;
+}
