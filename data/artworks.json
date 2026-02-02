@@ -1,0 +1,58 @@
+[
+  {
+    "id": "aurora",
+    "title": "Aurora Weaving",
+    "artist": "Mika Hori",
+    "tags": ["light", "textile", "aurora"],
+    "image": "/artworks/aurora.svg"
+  },
+  {
+    "id": "calm-tide",
+    "title": "Calm Tide",
+    "artist": "Kenta Shino",
+    "tags": ["sea", "minimal", "blue"],
+    "image": "/artworks/calm-tide.svg"
+  },
+  {
+    "id": "dusty-rose",
+    "title": "Dusty Rose Sketch",
+    "artist": "Aya Ueno",
+    "tags": ["ink", "line", "portrait"],
+    "image": "/artworks/dusty-rose.svg"
+  },
+  {
+    "id": "emerald",
+    "title": "Emerald Chamber",
+    "artist": "Mika Hori",
+    "tags": ["green", "geometry", "light"],
+    "image": "/artworks/emerald.svg"
+  },
+  {
+    "id": "night-path",
+    "title": "Night Path",
+    "artist": "Ryo Kitagawa",
+    "tags": ["night", "city", "glow"],
+    "image": "/artworks/night-path.svg"
+  },
+  {
+    "id": "silent-garden",
+    "title": "Silent Garden",
+    "artist": "Aya Ueno",
+    "tags": ["botanical", "mist", "garden"],
+    "image": "/artworks/silent-garden.svg"
+  },
+  {
+    "id": "soft-forms",
+    "title": "Soft Forms",
+    "artist": "Kenta Shino",
+    "tags": ["sculpture", "soft", "cream"],
+    "image": "/artworks/soft-forms.svg"
+  },
+  {
+    "id": "still-sun",
+    "title": "Still Sun",
+    "artist": "Ryo Kitagawa",
+    "tags": ["sun", "warm", "abstract"],
+    "image": "/artworks/still-sun.svg"
+  }
+]
